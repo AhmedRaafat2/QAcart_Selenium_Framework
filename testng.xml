@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Vandebron App Automation Test Suite">
+
+	<listeners>
+		<listener
+			class-name="com.qacart.retryAnalyzer.RetryTransformer" />
+	</listeners>
+
+ 	<test thread-count="5" name="QAcart Automation Test Framework">
+		<classes>
+		
+			<class name="com.qacart.testcases.configTest" />
+	 		<class name="com.qacart.testcases.Test_Page_One" />
+			
+		</classes>
+	</test>
+</suite> <!-- Suite -->
+
